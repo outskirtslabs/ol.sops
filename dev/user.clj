@@ -16,7 +16,16 @@
 
   (let [plaintext "much: wow\n"
         target "dev/test-encrypt.sops.yml"]
-    @(sops/encrypt-to-file plaintext target
-                           {:age "age15905pjs5av9nyh8rdt4zrzn7x0mdud20eyf7tsvz63mygvsfhd9sclsh94"}))
+    @(sops/encrypt-to-file target plaintext {:age "age15905pjs5av9nyh8rdt4zrzn7x0mdud20eyf7tsvz63mygvsfhd9sclsh94"}))
   ;;
   )
+
+;; decrypt a sops file to string
+(sops/decrypt-file-to-str "dev/test.sops.yml"
+                          {:env {"SOPS_AGE_KEY_FILE" "dev/keys.txt"}})
+;; => "hello: world\n"
+
+;; encrypt a plaintext to a sfile
+@(sops/encrypt-to-file "output.sops.json"
+                       (edn->json {:foo "bar"})
+                       {:age "age15905pjs5av9nyh8rdt4zrzn7x0mdud20eyf7tsvz63mygvsfhd9sclsh94"})

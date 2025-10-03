@@ -22,7 +22,17 @@ This is intended for [babashka][babashka] and JVM clojure and provides an idioma
 ```clojure
 (ns myapp.core
   (:require [ol.sops :as sops]))
+  
 
+;; decrypt a sops file to string
+(sops/decrypt-file-to-str "dev/test.sops.yml"
+                          {:env {"SOPS_AGE_KEY_FILE" "dev/keys.txt"}})
+;; => "hello: world\n"
+
+;; encrypt a plaintext to a sfile
+@(sops/encrypt-to-file "output.sops.json"
+                       (edn->json {:foo "bar"})
+                       {:age "age15905pjs5av9nyh8rdt4zrzn7x0mdud20eyf7tsvz63mygvsfhd9sclsh94"})
 ```
 
 ## Security

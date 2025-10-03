@@ -84,7 +84,7 @@
 (defn decrypt-file-to-str [file opts]
   (:out (p/check (apply sops :decrypt [file] (apply concat (merge opts {:out :string}))))))
 
-(defn encrypt-to-file [plaintext file opts]
+(defn encrypt-to-file [file plaintext opts]
   (binding [*process-opts* {:out :write :out-file file}]
     (let [merged-opts (merge opts {:in plaintext :filename-override file})
           proc (apply sops :encrypt [] (apply concat merged-opts))]

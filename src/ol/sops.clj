@@ -77,10 +77,10 @@
   
   Example:
   ```clojure
-  (encrypt-to-file \"foo: bar\" \"secrets.sops.yaml\" {:age \"age1...\"})
+  (encrypt-to-file \"secrets.sops.yaml\" \"foo: bar\"  {:age \"age1...\"})
   ```"
-  [plaintext file opts]
-  (impl/encrypt-to-file plaintext file opts))
+  [file plaintext opts]
+  (impl/encrypt-to-file file plaintext opts))
 
 (defmacro with-process-opts
   "An escape hatch that executes body with additional babashka/process options merged into the process call.
