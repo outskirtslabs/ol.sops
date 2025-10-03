@@ -1,0 +1,14 @@
+{:paths   ["src"]
+ :deps    {babashka/process {:mvn/version "0.6.23"}}
+ :aliases {:kaocha {:extra-paths ["test"]
+                    :extra-deps  {lambdaisland/kaocha {:mvn/version "1.91.1392"}}
+                    :main-opts   ["-m" "kaocha.runner"]}
+           :dev    {:extra-paths ["dev"]}
+           :build  {:deps       {io.github.clojure/tools.build {:git/tag "v0.10.10"
+                                                                :git/sha "deedd62"}
+                                 slipset/deps-deploy           {:mvn/version "0.2.2"}}
+                    :ns-default build}
+           :neil   {:project {:name        com.outskirtslabs/sops
+                              :license     {:id "MIT"}
+                              :description "An extremely tiny and simple wrapper around the awesome sops (previously known as mozilla/sops)"
+                              :version     "0.1.0"}}}}
