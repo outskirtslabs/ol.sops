@@ -1,0 +1,6 @@
+name: ol.sops
+title: SOPS
+version: next
+prerelease: true
+nav:
+  - modules/ROOT/nav.adoc

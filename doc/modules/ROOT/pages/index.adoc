@@ -1,0 +1,56 @@
+= `ol.sops`
+
+____
+An extremely tiny and simple wrapper around the awesome sops (previously
+known as mozilla/sops)
+____
+
+https://github.com/outskirtslabs/ol.sops/actions[image:https://github.com/outskirtslabs/ol.sops/actions/workflows/ci.yml/badge.svg[Build
+Status]]
+https://cljdoc.org/d/com.outskirtslabs/ol.sops[image:https://cljdoc.org/badge/com.outskirtslabs/ol.sops[cljdoc
+badge]]
+https://clojars.org/com.outskirtslabs/ol.sops[image:https://img.shields.io/clojars/v/com.outskirtslabs/ol.sops.svg[Clojars
+Project]]
+
+This is intended for https://babashka.org/[babashka] and JVM clojure and
+provides an idiomatic and data driven wrapper around the CLI tool.
+
+== Installation
+
+[source,clojure]
+----
+{:deps {com.outskirtslabs/sops {:mvn/version "0.1.0"}}}
+
+;; Leiningen
+[com.outskirtslabs/sops "0.1.0"]
+----
+
+== Quick Start
+
+[source,clojure]
+----
+(ns myapp.core
+  (:require [ol.sops :as sops]))
+  
+
+;; decrypt a sops file to string
+(sops/decrypt-file-to-str "dev/test.sops.yml"
+                          {:env {"SOPS_AGE_KEY_FILE" "dev/keys.txt"}})
+;; => "hello: world\n"
+
+;; encrypt a plaintext to a sfile
+@(sops/encrypt-to-file "output.sops.json"
+                       (edn->json {:foo "bar"})
+                       {:age "age15905pjs5av9nyh8rdt4zrzn7x0mdud20eyf7tsvz63mygvsfhd9sclsh94"})
+----
+
+== Security
+
+See https://github.com/outskirtslabs/ol.sops/security[here] for security
+advisories or to report a security vulnerability.
+
+== License
+
+Copyright © 2025 Casey Link casey@outskirtslabs.com
+
+Distributed under the link:./LICENSE[MIT License]
