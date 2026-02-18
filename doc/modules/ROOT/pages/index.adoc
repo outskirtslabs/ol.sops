@@ -5,15 +5,17 @@ An extremely tiny and simple wrapper around the awesome sops (previously
 known as mozilla/sops)
 ____
 
+image:https://img.shields.io/badge/doc-outskirtslabs-orange.svg[doc,link=http://docs.outskirtslabs.com/ol.sops/next/]
+image:https://img.shields.io/badge/status-maturing-yellow.svg[status: maturing,link=http://docs.outskirtslabs.com/open-source-vital-signs#maturing]
 https://github.com/outskirtslabs/ol.sops/actions[image:https://github.com/outskirtslabs/ol.sops/actions/workflows/ci.yml/badge.svg[Build
 Status]]
-https://cljdoc.org/d/com.outskirtslabs/ol.sops[image:https://cljdoc.org/badge/com.outskirtslabs/ol.sops[cljdoc
-badge]]
 https://clojars.org/com.outskirtslabs/ol.sops[image:https://img.shields.io/clojars/v/com.outskirtslabs/ol.sops.svg[Clojars
 Project]]
 
 This is intended for https://babashka.org/[babashka] and JVM clojure and
 provides an idiomatic and data driven wrapper around the CLI tool.
+
+Project status: *https://docs.outskirtslabs.com/open-source-vital-signs#maturing[Maturing]*.
 
 == Installation
 
@@ -43,6 +45,12 @@ provides an idiomatic and data driven wrapper around the CLI tool.
                        (edn->json {:foo "bar"})
                        {:age "age15905pjs5av9nyh8rdt4zrzn7x0mdud20eyf7tsvz63mygvsfhd9sclsh94"})
 ----
+
+== Documentation
+
+* https://docs.outskirtslabs.com/ol.sops/next/[Docs]
+* https://docs.outskirtslabs.com/ol.sops/next/api[API Reference]
+* https://github.com/outskirtslabs/ol.sops/issues[Support via GitHub Issues]
 
 == Security
 
