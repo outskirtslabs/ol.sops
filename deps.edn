@@ -11,4 +11,7 @@
            :neil   {:project {:name        com.outskirtslabs/sops
                               :license     {:id "MIT"}
                               :description "An extremely tiny and simple wrapper around the awesome sops (previously known as mozilla/sops)"
+                              :platforms   [:clj :bb]
+                              :created     "2025-10-03"
+                              :status      :maturing
                               :version     "0.1.0"}}}}

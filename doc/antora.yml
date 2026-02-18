@@ -1,5 +1,6 @@
+---
 name: ol.sops
-title: SOPS
+title: ol.sops
 version: next
 prerelease: true
 nav:

@@ -1,0 +1,18 @@
+{:manifest/version 1,
+ :project
+ {:id "ol.sops",
+  :coord "com.outskirtslabs/sops",
+  :description
+  "An extremely tiny and simple wrapper around the awesome sops (previously known as mozilla/sops)",
+  :license "MIT",
+  :platforms [:clj :bb],
+  :status :maturing,
+  :created "2025-10-03",
+  :version "0.1.0"},
+ :docs
+ {:component "ol.sops",
+  :title "ol.sops",
+  :version "next",
+  :prerelease true,
+  :start-path "doc"},
+ :repo {:url "https://github.com/outskirtslabs/ol.sops"}}
