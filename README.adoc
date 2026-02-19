@@ -5,8 +5,8 @@ An extremely tiny and simple wrapper around the awesome sops (previously
 known as mozilla/sops)
 ____
 
-image:https://img.shields.io/badge/doc-outskirtslabs-orange.svg[doc,link=http://docs.outskirtslabs.com/ol.sops/next/]
-image:https://img.shields.io/badge/status-maturing-yellow.svg[status: maturing,link=http://docs.outskirtslabs.com/open-source-vital-signs#maturing]
+image:https://img.shields.io/badge/doc-outskirtslabs-orange.svg[doc,link=https://docs.outskirtslabs.com/ol.sops/next/]
+image:https://img.shields.io/badge/status-maturing-yellow.svg[status: maturing,link=https://docs.outskirtslabs.com/open-source-vital-signs#maturing]
 https://github.com/outskirtslabs/ol.sops/actions[image:https://github.com/outskirtslabs/ol.sops/actions/workflows/ci.yml/badge.svg[Build
 Status]]
 https://clojars.org/com.outskirtslabs/ol.sops[image:https://img.shields.io/clojars/v/com.outskirtslabs/ol.sops.svg[Clojars
