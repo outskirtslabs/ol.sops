@@ -7,7 +7,7 @@ ____
 
 image:https://img.shields.io/badge/doc-outskirtslabs-orange.svg[doc,link=https://docs.outskirtslabs.com/ol.sops/next/]
 image:https://img.shields.io/badge/status-maturing-yellow.svg[status: maturing,link=https://docs.outskirtslabs.com/open-source-vital-signs#maturing]
-image:https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fgarnix.io%2Fapi%2Fbadges%2Foutskirtslabs%2Fol.sops[alt=built with garnix,link=https://garnix.io/repo/outskirtslabs/ol.sops]
+image:https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fgarnix.io%2Fapi%2Fbadges%2Foutskirtslabs%2Fsops[alt=built with garnix,link=https://garnix.io/repo/outskirtslabs/sops]
 https://clojars.org/com.outskirtslabs/sops[image:https://img.shields.io/clojars/v/com.outskirtslabs/sops.svg[Clojars
 Project]]
 
@@ -50,11 +50,11 @@ Project status: *https://docs.outskirtslabs.com/open-source-vital-signs#maturing
 
 * https://docs.outskirtslabs.com/ol.sops/next/[Docs]
 * https://docs.outskirtslabs.com/ol.sops/next/api[API Reference]
-* https://github.com/outskirtslabs/ol.sops/issues[Support via GitHub Issues]
+* https://github.com/outskirtslabs/sops/issues[Support via GitHub Issues]
 
 == Security
 
-See https://github.com/outskirtslabs/ol.sops/security[here] for security
+See https://github.com/outskirtslabs/sops/security[here] for security
 advisories or to report a security vulnerability.
 
 == License

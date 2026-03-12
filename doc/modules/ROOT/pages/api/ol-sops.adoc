@@ -49,7 +49,7 @@ Decrypt file to a string
 (slurp (:out (sops :decrypt ["secrets.sops.yaml"])))
 
 [.api-source]
-link:https://github.com/outskirtslabs/ol.sops/blob/main/src/ol/sops.clj#L6-L46[source,window=_blank]
+link:https://github.com/outskirtslabs/sops/blob/main/src/ol/sops.clj#L6-L46[source,window=_blank]
 
 '''
 
@@ -79,7 +79,7 @@ Example:
 ----
 
 [.api-source]
-link:https://github.com/outskirtslabs/ol.sops/blob/main/src/ol/sops.clj#L48-L62[source,window=_blank]
+link:https://github.com/outskirtslabs/sops/blob/main/src/ol/sops.clj#L48-L62[source,window=_blank]
 
 '''
 
@@ -114,7 +114,7 @@ Example:
 ----
 
 [.api-source]
-link:https://github.com/outskirtslabs/ol.sops/blob/main/src/ol/sops.clj#L64-L83[source,window=_blank]
+link:https://github.com/outskirtslabs/sops/blob/main/src/ol/sops.clj#L64-L83[source,window=_blank]
 
 '''
 
@@ -141,4 +141,4 @@ Example:
 ----
 
 [.api-source]
-link:https://github.com/outskirtslabs/ol.sops/blob/main/src/ol/sops.clj#L85-L96[source,window=_blank]
+link:https://github.com/outskirtslabs/sops/blob/main/src/ol/sops.clj#L85-L96[source,window=_blank]
