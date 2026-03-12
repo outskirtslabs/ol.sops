@@ -12,7 +12,7 @@
  :docs
  {:component "ol.sops",
   :title "ol.sops",
-  :version "next",
-  :prerelease true,
+  :version "0.1",
+  :prerelease false,
   :start-path "doc"},
- :repo {:url "https://github.com/outskirtslabs/ol.sops"}}
+ :repo {:url "https://github.com/outskirtslabs/sops"}}
