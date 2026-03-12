@@ -1,2 +1,2 @@
-.API Reference
-* xref:api/ol-sops.adoc[ol.sops]
+* xref:api.adoc[API Reference]
+** xref:api/ol-sops.adoc[ol.sops]

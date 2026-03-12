@@ -7,11 +7,8 @@ Versioning*].
 
 == ++[++UNRELEASED++]++
 
-* Removed references in docstrings to old functions that existed in an
-unreleased version
-
-[[v010-2025-10-xx]]
-== `v0.1.0` (2025-10-XX)
+[[v010-2025-10-03]]
+== `v0.1.0` (2025-10-03)
 
 This is the first public release of this codebase under the `ol.sops`
 name.
