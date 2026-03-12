@@ -1,6 +1,6 @@
 {:deps  {outskirtslabs/bb-tasks
          {:git/url "https://github.com/outskirtslabs/bb-tasks"
-          :git/sha "0b8c63cefcad7a64740ae2f51b9b118ab97ac224"}}
+          :git/sha "b224881d5f6d4ae72c514faede9a5eb0b5f627a8"}}
  :pods  {clj-kondo/clj-kondo {:version "2026.01.19"}}
  :paths ["resources" "scripts"]
  :tasks {:requires         ([babashka.fs :as fs]
