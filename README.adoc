@@ -7,9 +7,8 @@ ____
 
 image:https://img.shields.io/badge/doc-outskirtslabs-orange.svg[doc,link=https://docs.outskirtslabs.com/ol.sops/next/]
 image:https://img.shields.io/badge/status-maturing-yellow.svg[status: maturing,link=https://docs.outskirtslabs.com/open-source-vital-signs#maturing]
-https://github.com/outskirtslabs/ol.sops/actions[image:https://github.com/outskirtslabs/ol.sops/actions/workflows/ci.yml/badge.svg[Build
-Status]]
-https://clojars.org/com.outskirtslabs/ol.sops[image:https://img.shields.io/clojars/v/com.outskirtslabs/ol.sops.svg[Clojars
+image:https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fgarnix.io%2Fapi%2Fbadges%2Foutskirtslabs%2Fol.sops[alt=built with garnix,link=https://garnix.io/repo/outskirtslabs/ol.sops]
+https://clojars.org/com.outskirtslabs/sops[image:https://img.shields.io/clojars/v/com.outskirtslabs/sops.svg[Clojars
 Project]]
 
 This is intended for https://babashka.org/[babashka] and JVM clojure and
@@ -21,6 +20,7 @@ Project status: *https://docs.outskirtslabs.com/open-source-vital-signs#maturing
 
 [source,clojure]
 ----
+;; deps.edn
 {:deps {com.outskirtslabs/sops {:mvn/version "0.1.0"}}}
 
 ;; Leiningen
