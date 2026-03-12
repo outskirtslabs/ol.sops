@@ -44,11 +44,7 @@
                   rel = pkgs.lib.removePrefix (root + "/") (toString path);
                   base = builtins.baseNameOf path;
                 in
-                !(
-                  base == ".git"
-                  || rel == "result"
-                  || pkgs.lib.hasPrefix "target/" rel
-                );
+                !(base == ".git" || rel == "result" || pkgs.lib.hasPrefix "target/" rel);
             };
           in
           pkgs.mkCljLib {
