@@ -56,10 +56,10 @@
               pkgs.sops
             ];
             GIT_REV = gitRev;
-            JAVA_HOME = pkgs.jdk24.home;
+            JAVA_HOME = pkgs.jdk25.home;
             buildCommand = ''
-              export JAVA_HOME="${pkgs.jdk24.home}"
-              export JAVA_CMD="${pkgs.jdk24}/bin/java"
+              export JAVA_HOME="${pkgs.jdk25.home}"
+              export JAVA_CMD="${pkgs.jdk25}/bin/java"
               clojure -M:kaocha
               clojure -T:build jar
             '';
@@ -68,22 +68,16 @@
       devShell =
         pkgs:
         let
-          jdk = pkgs.jdk24;
-          clojure = pkgs.clojure.override { jdk21 = jdk; };
+          jdk = pkgs.jdk25;
+          clojure = pkgs.clojure.override { inherit jdk; };
         in
         pkgs.devshell.mkShell {
           imports = [
             devenv.capsules.base
+            devenv.capsules.clojure
           ];
           packages = [
-            pkgs.deps-lock
-            clojure
-            jdk
             pkgs.dumbpipe
-            pkgs.clojure-lsp
-            pkgs.clj-kondo
-            pkgs.cljfmt
-            pkgs.babashka
             pkgs.git
             pkgs.sops
             (pkgs.writeScriptBin "run-clojure-mcp" ''
